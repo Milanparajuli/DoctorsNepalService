@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Milan Parajuli",
+    "phone": "9860894447",
+    "address": "Sindhupalchok",
+    "profile": "../../../../assets/images/bg.jpg",
+    "speacialon": "Heart",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid sit ullam, aperiam libero tempore amet voluptates ex temporibus error expedita incidunt dicta eius odit animi, eos quo, perspiciatis rerum?"
+  },
+  {
+    "name": "Aviyan Dahal",
+    "phone": "986025894",
+    "address": "kapan",
+    "profile": "../../../../assets/images/bg.jpg",
+    "speacialon": "Eye",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid sit ullam, aperiam libero tempore amet voluptates ex temporibus error expedita incidunt dicta eius odit animi, eos quo, perspiciatis rerum?"
+  },
+  {
+    "name": "Arjun Bhusal",
+    "phone": "9866312827",
+    "address": "Chunikhel",
+    "profile": "../../../../assets/images/bg.jpg",
+    "speacialon": "Heart",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid sit ullam, aperiam libero tempore amet voluptates ex temporibus error expedita incidunt dicta eius odit animi, eos quo, perspiciatis rerum?"
+  },
+  {
+    "name": "Sharad Khanal",
+    "phone": "9866989498",
+    "address": "Saraswotinagar",
+    "profile": "../../../../assets/images/bg.jpg",
+    "speacialon": "Neuro",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid sit ullam, aperiam libero tempore amet voluptates ex temporibus error expedita incidunt dicta eius odit animi, eos quo, perspiciatis rerum?"
+  },
+  {
+    "name": "Deepak Kumar Shrestha",
+    "phone": "9868528587",
+    "address": "Ramechap",
+    "profile": "../../../../assets/images/bg.jpg",
+    "speacialon": "Heart",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid sit ullam, aperiam libero tempore amet voluptates ex temporibus error expedita incidunt dicta eius odit animi, eos quo, perspiciatis rerum?"
+  },
+  {
+    "name": "Ram Prasad Sharma",
+    "phone": "9860894447",
+    "address": "kapan",
+    "profile": "../../assets/images/bg.jpg",
+    "speacialon": "Heart",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid sit ullam, aperiam libero tempore amet voluptates ex temporibus error expedita incidunt dicta eius odit animi, eos quo, perspiciatis rerum?"
+  }
+]
