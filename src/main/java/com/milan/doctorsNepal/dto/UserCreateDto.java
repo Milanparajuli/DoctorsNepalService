@@ -1,5 +1,6 @@
 package com.milan.doctorsNepal.dto;
 
+import com.milan.doctorsNepal.utils.RoleType;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -10,5 +11,7 @@ public class UserCreateDto {
 	private String email;
 	private String password;
 	private String username;
+
+	private RoleType roleType;
 //	private int otp;
 }

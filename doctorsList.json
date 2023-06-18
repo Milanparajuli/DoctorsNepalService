@@ -5,6 +5,7 @@
     "address": "Sindhupalchok",
     "profile": "../../../../assets/images/bg.jpg",
     "speacialon": "Heart",
+    "email": "milanparajuli2058@gmail.com",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid sit ullam, aperiam libero tempore amet voluptates ex temporibus error expedita incidunt dicta eius odit animi, eos quo, perspiciatis rerum?"
   },
   {
@@ -13,6 +14,7 @@
     "address": "kapan",
     "profile": "../../../../assets/images/bg.jpg",
     "speacialon": "Eye",
+    "email": "nayivadahal@gmail.com",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid sit ullam, aperiam libero tempore amet voluptates ex temporibus error expedita incidunt dicta eius odit animi, eos quo, perspiciatis rerum?"
   },
   {
@@ -40,11 +42,21 @@
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid sit ullam, aperiam libero tempore amet voluptates ex temporibus error expedita incidunt dicta eius odit animi, eos quo, perspiciatis rerum?"
   },
   {
-    "name": "Ram Prasad Sharma",
+    "name": "Shristi Pokhrel",
     "phone": "9860894447",
     "address": "kapan",
     "profile": "../../assets/images/bg.jpg",
     "speacialon": "Heart",
+    "email":"shristi@gmail.com",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid sit ullam, aperiam libero tempore amet voluptates ex temporibus error expedita incidunt dicta eius odit animi, eos quo, perspiciatis rerum?"
+  },
+  {
+    "name": "Madan Dahal",
+    "phone": "9860894447",
+    "address": "kapan",
+    "profile": "../../assets/images/bg.jpg",
+    "speacialon": "Heart",
+    "email":"dahalmadan36@gmail.com",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid sit ullam, aperiam libero tempore amet voluptates ex temporibus error expedita incidunt dicta eius odit animi, eos quo, perspiciatis rerum?"
   }
 ]

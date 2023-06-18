@@ -3,7 +3,7 @@ package com.milan.doctorsNepal.dto;
 import lombok.Data;
 
 @Data
-public class DoctorResponseDto {
+public class IdentityResponseDto {
     private Long id;
     private String name;
 

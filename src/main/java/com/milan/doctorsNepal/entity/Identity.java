@@ -11,9 +11,9 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "doctor")
+@Table(name = "identities")
 
-public class Doctor implements Serializable {
+public class Identity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,6 +24,8 @@ public class Doctor implements Serializable {
     private String address;
 
     private String phone;
+    @Column(unique = true)
+    private String email;
 
     private String profile;
 
@@ -32,6 +34,9 @@ public class Doctor implements Serializable {
 //    @Column(columnDefinition = "NVARCHAR(MAX)")
     @Lob
     private String description;
+
+    @OneToOne
+    private User user;
 
 
 }

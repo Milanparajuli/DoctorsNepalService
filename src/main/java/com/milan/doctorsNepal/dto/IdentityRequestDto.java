@@ -3,6 +3,6 @@ package com.milan.doctorsNepal.dto;
 import lombok.Data;
 
 @Data
-public class DoctorRequestDto {
+public class IdentityRequestDto {
     private String name;
 }
