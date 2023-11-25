@@ -29,7 +29,9 @@ public class Identity implements Serializable {
 
     private String profile;
 
-    private String speacialon;
+    private String specialOn;
+    private String degree;
+    private String nmcNo;
 
 //    @Column(columnDefinition = "NVARCHAR(MAX)")
     @Lob

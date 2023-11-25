@@ -11,6 +11,9 @@ import java.util.List;
 public interface IdentityRepository extends JpaRepository<Identity, Long> {
 
     List<Identity> findByNameContaining(String name);
+    List<Identity> findBySpecialOnContaining(String specialOn);
+    List<Identity> findByAddressContaining(String address);
+    List<Identity> getIdentityByNameOrAddressContaining(String name, String address);
 
     Identity findByNameAndEmail(String name, String email);
 }

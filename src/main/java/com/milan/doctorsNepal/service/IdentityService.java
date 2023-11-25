@@ -30,6 +30,8 @@ public class IdentityService {
 
     ResourceLoader resourceLoader;
 
+    private final MailService mailService;
+
 
     PasswordGenerator passwordGenerator;
 
@@ -54,30 +56,31 @@ public class IdentityService {
         List<Identity> savedIdentitys = new ArrayList<>();
         try (InputStream inputStream = f) {
             List<Identity> identity = List.of(objectMapper.readValue(inputStream, Identity[].class));
-            System.out.println("identity list is:" + identity);
             identity.stream().forEach(o -> {
                 Identity existingIdentity = identityRepository.findByNameAndEmail(o.getName(), o.getEmail());
                 if (!Objects.isNull(existingIdentity)) o.setId(existingIdentity.getId());
             });
             savedIdentitys = identityRepository.saveAll(identity);
             savedIdentitys.stream().forEach(o -> {
-                MailService mailService = new MailService();
+//                MailService mailService = new MailService();
                 EmailMessage emailMessage = new EmailMessage();
                 String originalPassword = passwordGenerator.generateRandomPassword();
                 String encryptedPassword = BCrypt.hashpw(originalPassword, BCrypt.gensalt());
+                String[] username = o.getEmail().split("@");
+                //                mailService.mailSend(emailMessage, o.getEmail(), o.getName(), originalPassword);
+                new Thread(() -> {
+                    this.mailService.mailSend(emailMessage, o.getEmail(), o.getName(), originalPassword, username[0]);
+                }).start();
 //                javamailSender.send(f.email)
                 emailMessage.setName(o.getName());
                 emailMessage.setEmail(o.getEmail());
                 emailMessage.setSubject("Username and Password");
                 User user = new User();
-                String[] username = o.getEmail().split("@");
-//                mailService.mailSend(emailMessage, o.getEmail(), o.getName(), originalPassword);
                 user.setPassword(encryptedPassword);
                 user.setUsername(username[0]);
                 user.setFullName(o.getName());
                 user.setEmail(o.getEmail());
-                user.setRoleType(RoleType.DOCTOR);
-                if (!Objects.isNull(userService.getByNameAndEmail(o.getName(), o.getEmail()))) {
+                user.setRoleType(RoleType.DOCTOR);if (!Objects.isNull(userService.getByNameAndEmail(o.getName(), o.getEmail()))) {
                     User existingUser = userService.getByNameAndEmail(o.getName(), o.getEmail());
                     user.setUserId(existingUser.getUserId());
                 }
@@ -94,12 +97,15 @@ public class IdentityService {
 
     private IdentityResponseDto getIdentityResponse(Identity saveIdentity) {
         IdentityResponseDto response = new IdentityResponseDto();
+        response.setId(saveIdentity.getId());
         response.setName(saveIdentity.getName());
         response.setAddress(saveIdentity.getAddress());
         response.setDescription(saveIdentity.getDescription());
         response.setProfile(saveIdentity.getProfile());
-        response.setSpeacialon(saveIdentity.getSpeacialon());
+        response.setSpeacialon(saveIdentity.getSpecialOn());
         response.setPhone(saveIdentity.getPhone());
+        response.setDegree(saveIdentity.getDegree());
+        response.setNmcNo(saveIdentity.getNmcNo());
         return response;
 
     }
@@ -132,7 +138,56 @@ public class IdentityService {
         return response;
 
     }
-//    public Page<Identity> getPageableIdentity() {
+    public IdentityResponseListDto getIdentityBySpecialOn(String specialOn) {
+        List<IdentityResponseDto> identityResponseList = new ArrayList<>();
+        List<Identity> identitys = (List<Identity>) identityRepository.findBySpecialOnContaining(specialOn);
+
+        for (Identity identity : identitys) {
+            identityResponseList.add(getIdentityResponse(identity));
+        }
+
+        System.out.println("Identitys {}" + identitys);
+        IdentityResponseListDto response = new IdentityResponseListDto();
+        response.setIdentity(identityResponseList);
+        response.setTotalIdentity(identityResponseList.size());
+
+        return response;
+
+    }
+
+    public IdentityResponseListDto getIdentityByAddress(String address) {
+        List<IdentityResponseDto> identityResponseList = new ArrayList<>();
+        List<Identity> identitys = (List<Identity>) identityRepository.findByAddressContaining(address);
+
+        for (Identity identity : identitys) {
+            identityResponseList.add(getIdentityResponse(identity));
+        }
+
+        System.out.println("Identitys {}" + identitys);
+        IdentityResponseListDto response = new IdentityResponseListDto();
+        response.setIdentity(identityResponseList);
+        response.setTotalIdentity(identityResponseList.size());
+
+        return response;
+    }
+
+    public IdentityResponseListDto getIdentityByNameOrAddress(String name, String address) {
+        List<IdentityResponseDto> identityResponseList = new ArrayList<>();
+        List<Identity> identitys = (List<Identity>) identityRepository.getIdentityByNameOrAddressContaining(name, address);
+
+        for (Identity identity : identitys) {
+            identityResponseList.add(getIdentityResponse(identity));
+        }
+
+        System.out.println("Identitys {}" + identitys);
+        IdentityResponseListDto response = new IdentityResponseListDto();
+        response.setIdentity(identityResponseList);
+        response.setTotalIdentity(identityResponseList.size());
+
+        return response;
+    }
+
+    //    public Page<Identity> getPageableIdentity() {
 //        return  identityRepository.findAll()
 //    }
 }

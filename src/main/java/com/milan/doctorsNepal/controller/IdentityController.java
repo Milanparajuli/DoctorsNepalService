@@ -45,6 +45,24 @@ public class IdentityController {
         return identityService.getIdentityByName(name);
     }
 
+    @GetMapping("/identity-by-speciality/{specialOn}")
+    @ResponseStatus(code = HttpStatus.OK)
+    public IdentityResponseListDto getBySpecialOn(@PathVariable String specialOn) {
+        return identityService.getIdentityBySpecialOn(specialOn);
+    }
+
+    @GetMapping("/identity-by-address/{address}")
+    @ResponseStatus(code = HttpStatus.OK)
+    public IdentityResponseListDto getByAddress(@PathVariable String address) {
+        return identityService.getIdentityByAddress(address);
+    }
+
+    @GetMapping("/identity-by-name-address/{name}/{address}")
+    @ResponseStatus(code = HttpStatus.OK)
+    public IdentityResponseListDto getByNameOrAddress(@PathVariable String name, @PathVariable String address) {
+        return identityService.getIdentityByNameOrAddress(name,address);
+    }
+
 //    @GetMapping(value = "/get-identitys/{size}/{page}")
 //    public Page<Identity> getPageableIdentity (@PathVariable("size") int size, @PathVariable("page") int page) {
 //        Pageable pageable = Page

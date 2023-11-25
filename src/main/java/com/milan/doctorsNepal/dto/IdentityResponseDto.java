@@ -16,4 +16,6 @@ public class IdentityResponseDto {
     private String speacialon;
 
     private String description;
+    private String degree;
+    private String nmcNo;
 }

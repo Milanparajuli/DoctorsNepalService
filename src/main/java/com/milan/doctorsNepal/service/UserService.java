@@ -46,6 +46,7 @@ public class UserService {
         response.setPassword(savedUser.getPassword());
 //		response.setOtp(savedUser.getOtp());
         response.setId(savedUser.getUserId());
+//        response.setDisease(savedUser.getDisease());
         return response;
     }
 
@@ -63,7 +64,9 @@ public class UserService {
         response.setUsername(saveUser.getUsername());
         response.setFullName(saveUser.getFullName());
         response.setPassword(saveUser.getPassword());
+        response.setRoleType(saveUser.getRoleType());
         response.setId(saveUser.getUserId());
+//        response.setDisease(saveUser.getDisease());
         return response;
 
     }

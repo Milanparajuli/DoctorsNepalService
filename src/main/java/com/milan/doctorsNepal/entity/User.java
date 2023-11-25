@@ -1,5 +1,7 @@
 package com.milan.doctorsNepal.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.milan.doctorsNepal.utils.Disease;
 import com.milan.doctorsNepal.utils.RoleType;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -22,9 +24,11 @@ public class User implements Serializable {
 	private String fullName;
 	private String email;
 	private String username;
+	@JsonIgnore
 	private String password;
 	private boolean loggedIn;
 	private RoleType roleType;
+//	private Disease disease;
 //	private int otp;
     //	private int otp;
 

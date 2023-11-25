@@ -4,50 +4,10 @@
     "phone": "9860894447",
     "address": "Sindhupalchok",
     "profile": "../../../../assets/images/bg.jpg",
-    "speacialon": "Heart",
+    "specialOn": "Geriatric medicine",
     "email": "milanparajuli2058@gmail.com",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid sit ullam, aperiam libero tempore amet voluptates ex temporibus error expedita incidunt dicta eius odit animi, eos quo, perspiciatis rerum?"
-  },
-  {
-    "name": "Aviyan Dahal",
-    "phone": "986025894",
-    "address": "kapan",
-    "profile": "../../../../assets/images/bg.jpg",
-    "speacialon": "Eye",
-    "email": "nayivadahal@gmail.com",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid sit ullam, aperiam libero tempore amet voluptates ex temporibus error expedita incidunt dicta eius odit animi, eos quo, perspiciatis rerum?"
-  },
-  {
-    "name": "Arjun Bhusal",
-    "phone": "9866312827",
-    "address": "Chunikhel",
-    "profile": "../../../../assets/images/bg.jpg",
-    "speacialon": "Heart",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid sit ullam, aperiam libero tempore amet voluptates ex temporibus error expedita incidunt dicta eius odit animi, eos quo, perspiciatis rerum?"
-  },
-  {
-    "name": "Sharad Khanal",
-    "phone": "9866989498",
-    "address": "Saraswotinagar",
-    "profile": "../../../../assets/images/bg.jpg",
-    "speacialon": "Neuro",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid sit ullam, aperiam libero tempore amet voluptates ex temporibus error expedita incidunt dicta eius odit animi, eos quo, perspiciatis rerum?"
-  },
-  {
-    "name": "Deepak Kumar Shrestha",
-    "phone": "9868528587",
-    "address": "Ramechap",
-    "profile": "../../../../assets/images/bg.jpg",
-    "speacialon": "Heart",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid sit ullam, aperiam libero tempore amet voluptates ex temporibus error expedita incidunt dicta eius odit animi, eos quo, perspiciatis rerum?"
-  },
-  {
-    "name": "Shristi Pokhrel",
-    "phone": "9860894447",
-    "address": "kapan",
-    "profile": "../../assets/images/bg.jpg",
-    "speacialon": "Heart",
-    "email":"shristi@gmail.com",
+    "nmcNo": "12345678",
+    "degree": "MBBS",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid sit ullam, aperiam libero tempore amet voluptates ex temporibus error expedita incidunt dicta eius odit animi, eos quo, perspiciatis rerum?"
   },
   {
@@ -55,8 +15,21 @@
     "phone": "9860894447",
     "address": "kapan",
     "profile": "../../assets/images/bg.jpg",
-    "speacialon": "Heart",
+    "specialOn": "Neurologist",
     "email":"dahalmadan36@gmail.com",
+    "nmcNo": "123456789",
+    "degree": "BDS",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid sit ullam, aperiam libero tempore amet voluptates ex temporibus error expedita incidunt dicta eius odit animi, eos quo, perspiciatis rerum?"
+  },
+  {
+    "name": "Arjun Bhusal",
+    "phone": "9860894447",
+    "address": "kapan",
+    "profile": "../../assets/images/bg.jpg",
+    "specialOn": "Neurologist",
+    "email":"arjun.bhusal@aadimcollege.edu.np",
+    "nmcNo": "123456789",
+    "degree": "BDS",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid sit ullam, aperiam libero tempore amet voluptates ex temporibus error expedita incidunt dicta eius odit animi, eos quo, perspiciatis rerum?"
   }
 ]
