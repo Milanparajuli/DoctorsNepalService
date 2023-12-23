@@ -8,6 +8,8 @@
     "email": "milanparajuli2058@gmail.com",
     "nmcNo": "12345678",
     "degree": "MBBS",
+    "latitude": "27.743796",
+    "longitude": "85.3301053",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid sit ullam, aperiam libero tempore amet voluptates ex temporibus error expedita incidunt dicta eius odit animi, eos quo, perspiciatis rerum?"
   },
   {
@@ -19,6 +21,8 @@
     "email":"dahalmadan36@gmail.com",
     "nmcNo": "123456789",
     "degree": "BDS",
+    "latitude": "27.7454808",
+    "longitude": "85.3152913",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid sit ullam, aperiam libero tempore amet voluptates ex temporibus error expedita incidunt dicta eius odit animi, eos quo, perspiciatis rerum?"
   },
   {
@@ -30,6 +34,8 @@
     "email":"arjun.bhusal@aadimcollege.edu.np",
     "nmcNo": "123456789",
     "degree": "BDS",
+    "latitude": "27.7471263",
+    "longitude": "85.3186867",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid sit ullam, aperiam libero tempore amet voluptates ex temporibus error expedita incidunt dicta eius odit animi, eos quo, perspiciatis rerum?"
   }
 ]

@@ -18,4 +18,6 @@ public class IdentityResponseDto {
     private String description;
     private String degree;
     private String nmcNo;
+    private String longitude;
+    private  String latitude;
 }

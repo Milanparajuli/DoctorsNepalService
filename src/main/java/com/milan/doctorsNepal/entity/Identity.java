@@ -32,6 +32,8 @@ public class Identity implements Serializable {
     private String specialOn;
     private String degree;
     private String nmcNo;
+    private String longitude;
+    private  String latitude;
 
 //    @Column(columnDefinition = "NVARCHAR(MAX)")
     @Lob

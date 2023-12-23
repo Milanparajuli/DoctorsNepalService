@@ -106,6 +106,8 @@ public class IdentityService {
         response.setPhone(saveIdentity.getPhone());
         response.setDegree(saveIdentity.getDegree());
         response.setNmcNo(saveIdentity.getNmcNo());
+        response.setLatitude(saveIdentity.getLatitude());
+        response.setLongitude(saveIdentity.getLongitude());
         return response;
 
     }
